@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Forum Layout</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #007bff;
+            /* Set background color to blue */
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 15px;
+            text-align: center;
+        }
+
+        .container {
+            width: 80%;
+            margin: 20px auto;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h1,
+        h2 {
+            color: #333;
+        }
+
+        .post-list {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        .post {
+            border-bottom: 1px solid #ddd;
+            padding: 15px 0;
+        }
+
+        .post:last-child {
+            border-bottom: none;
+        }
+
+        .post-title {
+            font-size: 1.2em;
+            color: #007bff;
+            cursor: pointer;
+        }
+
+        .post-content {
+            margin-top: 10px;
+        }
+
+        .reply {
+            margin-left: 30px;
+            padding: 10px;
+            border-left: 3px solid #007bff;
+            background-color: #f9f9f9;
+        }
+
+        .new-post {
+            margin-top: 30px;
+        }
+
+        input,
+        textarea {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+        }
+
+        button {
+            padding: 10px 15px;
+            border: none;
+            background-color: #007bff;
+            color: white;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>Welcome to the AquaWise Forum</h1>
+    </header>
+
+    <div class="container">
+        <h2>Forum Discussions</h2>
+        <ul class="post-list">
+            <!-- Post 1 -->
+            <li class="post">
+                <div class="post-title">How can we conserve water at home?</div>
+                <div class="post-content">Share your tips and methods for water conservation in households.</div>
+                <!-- Replies to Post 1 -->
+                <div class="reply">
+                    <strong>User1:</strong> Installing low-flow showerheads and fixing leaks has helped us reduce water
+                    consumption significantly.
+                </div>
+                <div class="reply">
+                    <strong>User2:</strong> I use rain barrels to collect rainwater for my garden. It’s great for plants
+                    and saves water!
+                </div>
+            </li>
+            <!-- Post 2 -->
+            <li class="post">
+                <div class="post-title">Best water-efficient gardening techniques?</div>
+                <div class="post-content">What are some water-saving gardening tips you use in your backyard?</div>
+                <!-- Replies to Post 2 -->
+                <div class="reply">
+                    <strong>User3:</strong> I recommend using drip irrigation systems; they’re highly efficient in
+                    watering plants directly at the roots.
+                </div>
+            </li>
+        </ul>
+
+        <!-- New Post Section -->
+        <div class="new-post">
+            <h2>Create New Topic</h2>
+            <form>
+                <input type="text" placeholder="Topic Title" required />
+                <textarea rows="4" placeholder="Enter your content here..." required></textarea>
+                <button type="submit">Post Topic</button>
+            </form>
+        </div>
+    </div>
+
+</body>
+
+</html>

@@ -27,10 +27,10 @@ export default{
     setup(){
         let links = [
             {name:"Home", link:"#"},
-            {name:"Services", link:"#"},
-            {name:"Blog's", link:"#"},
-            {name:"Contact", link:"#"},
-            {name:"About", link:"#"},
+            {name:"Services", link:"https://jalshakti-ddws.gov.in/en"},
+            {name:"Blog's", link:"blogs.html"},
+            {name:"Contact", link:"https://www.instagram.com/aquawise87/"},
+            {name:"About", link:"about.html"},
         ]
 
         
